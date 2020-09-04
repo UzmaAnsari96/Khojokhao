@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity.IntroSlide2Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/fruit_bg"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="120dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_above="@+id/btn_next"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlue"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fresh Fruits"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Collection Of Freshness)"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_background_layout"
+                android:text="NEXT"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:onClick="slide3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginVertical="35dp"
+                android:layout_marginHorizontal="25dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_backgorund_layout"
+                android:text="Prev."
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:onClick="slide1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginVertical="35dp"
+                android:layout_marginHorizontal="25dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

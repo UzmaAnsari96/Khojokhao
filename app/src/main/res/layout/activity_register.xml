@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activity.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:isScrollContainer="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:visibility="gone"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="SKIP"
+                    android:textAlignment="center"
+                    android:textColor="@color/red" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_logo"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="15dp"
+                    android:padding="5dp"
+                    android:text="Please Enter Your Details"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/full_curve_backgorund_layout"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        android:isScrollContainer="true">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="20dp"
+                                    android:layout_marginVertical="20dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:text="Full Name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/edt_fname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:hint="Enter Your Full Name Here"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:visibility="gone"
+                                        android:text="Last Name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/edt_lname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:visibility="gone"
+                                        android:hint="Enter Your Last Name Here"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:text="Email"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/edt_email"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:hint="Enter Your Email ID Here"
+                                        android:inputType="textEmailAddress"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:text="Mobile Number"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/edt_mobile"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:hint="Enter Your Mobile Here"
+                                        android:inputType="number"
+                                        android:maxLength="10"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:text="State Name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/statename"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:clickable="false"
+                                        android:editable="false"
+                                        android:focusable="false"
+                                        android:hint="Select State Name"
+                                        android:inputType="number"
+                                        android:onClick="state"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:text="City Name"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/cityename"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:clickable="false"
+                                        android:editable="false"
+                                        android:focusable="false"
+                                        android:hint="Select City Name"
+                                        android:inputType="number"
+                                        android:onClick="city"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:text="Pin Code"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <EditText
+                                        android:id="@+id/edt_pincode"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:digits="0123456789"
+                                        android:hint="Enter Your Pincode Here"
+                                        android:inputType="number"
+                                        android:maxLength="6"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:text="Referral Code"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/edt_referralCode"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:layout_marginLeft="2dp"
+                                            android:layout_weight="1"
+                                            android:background="@color/colorWhite"
+                                            android:hint="Enter Your Referral Code Here"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="15sp" />
+
+                                        <ImageView
+                                            android:id="@+id/img_scanner"
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginHorizontal="5dp"
+                                            android:padding="5dp"
+                                            android:visibility="gone"
+                                            android:src="@drawable/qr_scanner" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/Gray"
+                                        android:visibility="visible" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:padding="5dp"
+                                        android:text="DOB"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp"
+                                        android:visibility="gone" />
+
+                                    <TextView
+                                        android:id="@+id/txt_dob"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:hint="Select Your DOB From The Calender"
+                                        android:padding="5dp"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="15sp"
+                                        android:visibility="gone" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0.5dp"
+                                        android:background="@color/colorBlack"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+                                <Button
+                                    android:id="@+id/btn_process"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:background="@drawable/blue_background_layout"
+                                    android:paddingHorizontal="10dp"
+                                    android:text="Proceed"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Khojo Khao</string>
+    <string name="term"><u>Terms&amp;Conditions</u></string>
+    <string name="account">Don\'t have an account ?  <u>Sign up</u></string>
+    <string name="otp_error">Login credentials are not found.</string>
+    <string name="here">Now you can Login <u><b>here</b></u>.</string>
+    <string name="runtime_permissions_txt">Runtime Permission Error</string>
+    <string name="registerhere">Now you can Register <u><b>here</b></u>.</string>
+    <string name="resend"><u>Resend Otp</u></string>
+
+    <string name="text1">This document is an electronic record in terms of Information Technology Act, 2000 and rules there under as applicable and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000. This document is published in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of <a herf="www.khojokhao.com"> KhojoKhao</a> website and khojokhao application for mobile and handheld devices.</string>
+
+    <string name="text2">Terms of use</string>
+    <string name="text3">1.	These terms of use clearly specify your rights and duties while using the service. The use of our website www.khojokhao.com (the “Website”) and the application ‘khojokhao’ which will be used for availing the services provided by us (the “App”). The Website and the App are jointly referred to as the “Platform”. Before using the service you are advised to read all the terms of use carefully. By clicking on the I Agree you authorizes us to register you as a Registered User and you shall comply with all the terms and conditions mentioned.</string>
+    <string name="text4">2.	This Platform is maintained and handled by Faverick Services Private Limited, a company incorporated under the laws of Company Act, 2013.</string>
+
+    <string name="text5">Terms of Service</string>
+    <string name="text6">1.	Khojokhao shall not deliver items in areas which fall outside the scope of the service. While adding the address, Khojokhao shall determine such delivery availability.</string>
+    <string name="text7">2.	You shall undertake to provide accurate directions and information at the time of the delivery to the delivery executive. If such delivery is not made within the required time due to the wrong information provided to the delivery executive, then in such case Khojokhao shall not be held responsible and you shall bear the cancellation of late delivery.</string>
+
+    <string name="text8">Account Registration</string>
+    <string name="text9">1.	A user shall be required to furnish the following details before using the Service/s of Khojokhao. The user registers themselves from the App by providing the following details:</string>
+    <string name="text10">   a. Name</string>
+    <string name="text11">   b. Address</string>
+    <string name="text12">   c. Email</string>
+    <string name="text13">   d. Contact Details</string>
+    <string name="text14">   e. Age</string>
+    <string name="text15">2. At the time of the registration, the Platform will send an OTP to the mobile no and email address provided by the user. The user shall copy the OTP and put the same in the App. After the verification is complete, the account will be created. </string>
+    <string name="text16">3. The user can at any time change the password of the App. For modifying the address and contact details, the user shall verify the email address and the phone number. A user can change the details maximum three times. </string>
+    <string name="text17">4. khojokhao holds an exclusive right to terminate the account or block the account of the user anytime. If the user uses the Platform for any other purpose then in such case the Khojokhao account shall be terminated or blocked without giving any prior notice to the user. </string>
+    <string name="text18">5. A user can create only one account with the same email address and mobile number.</string>
+    <string name="text19">6. A user can create an account by using third party verification. You can register yourself through your g-mail account. However, in such a case, the User shall verify the third-party account from the App. After successful verification, the account shall be created with the name as mentioned in such third-party account. The user shall confirm the mobile no. in such case before placing an order. </string>
+    <string name="text20">7. Khojokhao shall not be responsible for any late delivery/cancellation due to the wrong information provided by the user. If the user does not provide correct information, then in such case Khojokhao can delete the account of such user.</string>
+    <string name="text21">8. In case any account is blocked or deleted by the Khojokhao, then the user shall not be eligible to create another account with the same number and email address.</string>
+    <string name="text22">9. A maximum of one account can be created on one device.</string>
+
+    <string name="text23">Cancellations and Refunds</string>
+    <string name="text24">1. Cancellation</string>
+    <string name="text25"> i. As a general rule you shall not be entitled to cancel your order once you have received confirmation of the same. If you cancel your order after it has been confirmed, Khojokhao shall have a right to charge you a cancellation fee of a minimum 65Rs/- upto the order value, with a right to either not to refund the order value or recover from your subsequent order, the complete/ deficit cancellation fee, as applicable, to compensate our Grocery products and delivery partners.</string>
+    <string name="text26"> ii. We reserve the sole right to cancel your order in the following circumstances:</string>
+    <string name="text27">  (i) in the event of the designated address falling outside the delivery zone offered on our platform;</string>
+    <string name="text28">  (ii) unable to contact you by phone or email at the time of confirming the order placement;</string>
+    <string name="text29">  (iii) unabe to deliver your order due to lack of information, direction or authorization from you at the time of delivery;</string>
+    <string name="text30">  (iv) unavailability of all the items ordered by the customer at the time of booking the order; orr.</string>
+    <string name="text31">  (iv) unavailability of all the items ordered by the customer at the time of booking the order; or</string>
+    <string name="text32">  (v) failure due to reasons beyond our control or attributable to the Vendor.</string>
+
+    <string name="text33">2. Refund Policy</string>
+    <string name="text34">You shall be entitled to a refund only if you pre-pay for your order at the time of placing your order on the Platform and only in the event of any of the following circumstances:</string>
+    <string name="text35">a.Khojokhao cancel your order due to:-</string>
+    <string name="text36">•	Your delivery location falling outside our designated delivery destination.</string>
+    <string name="text37">•	Unable to contact you by phone or email at the time of confirming the order booking.</string>
+    <string name="text38">b. you cancelling the order at the time of confirmation due to unavailability of the items you ordered for at the time of booking.</string>
+    <string name="text39">All refund amounts shall be credited to your account within 14 business days in accordance with the terms that may be stipulated by the bank which has issued the credit / debit card.</string>
+    <string name="text40">3. In case of payment at the time of delivery, you will not be required to pay for:</string>
+    <string name="text41">•	wrong order being delivered.</string>
+    <string name="text42">•	items missing from your order at the time of delivery.</string>
+
+    <string name="privacy1">Khojo Khao is a trademark of Faverick Services Private Limited (“Company”), a company incorporated under the Companies Act, 2013 with its registered office SEC H, H.NO-3/766, JANKIPURAM, LUCKNOW, UTTAR PRADESH, 226021 in the course of its business. The domain name WWW.KHOJOKHAO.COM  is owned by the Company.</string>
+    <string name="privacy2">The Company respects and values your privacy and trust you place in it. </string>
+    <string name="privacy3">Here is the Company’s ‘Privacy Policy’ which details the manner in which information relating to you is collected, used and disclosed.</string>
+    <string name="privacy4">Customers are advised to read and understand our Privacy Policy carefully, as by accessing the website/app you agree to /the terms and conditions of the Privacy Policy and agree to the collection, storage and use of information relating to you as provided herein.</string>
+    <string name="privacy5">If you do not agree with the terms and conditions of our Privacy Policy, please do not use or access the website/app.</string>
+    <string name="privacy6">Our Privacy Policy is incorporated into the Terms and Conditions of Use of the website/app. The policies can change from time to time without notice. It is strongly recommended that you periodically review our Privacy Policy as posted on the App/Web.</string>
+    <string name="privacy7">For any clarifications regarding this Privacy Policy, please contact us at support@khojokhao.com  </string>
+    <string name="privacy8">The collection, Storage and Use of Information Related to You:</string>
+    <string name="privacy9">We collect and store personal information provided by you from time to time on the website/app. We only collect and use such information from you that we consider necessary for achieving a seamless, efficient and safe experience, customized to your needs and preferences.</string>
+    <string name="privacy10">We may automatically track certain information about you based upon your behaviour on the website. This information collected may include the URL that you just came from (whether this URL is on the website or not), which URL you next go to (whether this URL is on the website or not), your computer browser information, your IP address, and other information associated with your interaction with the website. We use this information to do internal research on our users’ interests, and behaviour to better understand, protect and serve our users. This information is compiled and analyzed on an aggregated basis.</string>
+    <string name="privacy11">We may also share your Mobile IP/Device IP with third parties and to the best of our knowledge, belief and representations given to us by these third parties this information is not stored by them.</string>
+    <string name="privacy12">We may also share your Mobile IP/Device IP with third parties and to the best of our knowledge, belief and representations given to us by these third parties this information is not stored by them.</string>
+    <string name="privacy13">We also do use your contact information to send you offers based on your interests and prior activity. We also use contact information internally to direct its efforts for product improvement, to contact you as a survey respondent, to notify you if you win any contest; and to send you promotional materials from its contest sponsors or advertisers.</string>
+    <string name="privacy14"><b>Contacts Permissions: </b>If you allow Khojo Khao to access your contacts (including contact number, email id etc.), it enables Khojo Khao to subscribe you and your contacts to Khojo Khao promotional emails, messages, ongoing offers etc., and through this permission you and your contacts will be able to access a variety of social features such as inviting your friends to try our app, send across referral links to your friends, etc. We may also use this information to make recommendations of grocery items you placed. This information will be synced from your phone and stored on our servers.</string>
+    <string name="privacy15">Further, you may from time to time choose to provide payment related financial information (credit card, debit card, bank account details, billing address etc.) on the website. We are committed to keeping all such sensitive data/information safe always and ensure that such data/information is only transacted over secure website of approved payment gateways which are digitally encrypted], and provide the highest possible degree of care available under the technology presently in use.</string>
+    <string name="privacy16"><b>The Company will not use your financial information for any purpose other than to complete a transaction with you.</b></string>
+    <string name="privacy17">We provide you the option of not divulging any specific information that you wish for us not to collect, store or use as far as possible. You may also choose not to use a particular service or feature on the website/application, and opt out of any non-essential communications from the Company.</string>
+    <string name="privacy18">Further, transacting over the internet has inherent risks which can only be avoided by you following security practices yourself, such as not revealing account/login related information to any other person and informing our customer care team about any suspicious activity or where your account has/may have been compromised.</string>
+    <string name="privacy19">Company use data collection devices such as “cookies” on certain pages of the website to help analyse our web page flow, measure promotional effectiveness, and promote trust and safety. “Cookies” are small files placed on your hard drive that assist us in providing our services. Company offers certain features that are only available through the use of a “cookie”.</string>
+    <string name="privacy20">The Company also use cookies to allow you to enter your password less frequently during a session. Cookies can also help the Company provide information that is targeted to your interests. Most cookies are “session cookies,” meaning that they are automatically deleted from your hard drive at the end of a session. You are always free to decline our cookies if your browser permits.</string>
+    <string name="privacy21">Additionally, you may encounter “cookies” or other similar devices on certain pages of the website that are placed by third parties. The Company does not control the use of cookies by third parties.</string>
+    <string name="privacy22">If you send the Company personal correspondence, such as emails/letters, or if other users or third parties send us correspondence about your activities on the website, the Company may collect such information into a file specific to you.</string>
+    <string name="privacy23">The Company does not store any information collected for any longer than is reasonably considered necessary by us, or such period as may be required by applicable laws. The Company may be required to disclose any information that is lawfully sought from it by a judicial or other competent body pursuant to applicable laws.</string>
+    <string name="privacy24">The website may contain links to other websites. We are not responsible for the privacy practices of such websites which we do not manage and control.</string>
+    <string name="privacy25"><b>Choices Available Regarding Collection, Use and Distribution of Information</b></string>
+    <string name="privacy26">To protect against the loss, misuse and change of the information under its control, the Company has in place appropriate physical, electronic and managerial procedures. For example, the Company servers are accessible only to authorized personnel and your information is shared with employees and authorized personnel on a need to know basis to complete the transaction and to provide the services requested by you. Although the Company endeavours to safeguard the confidentiality of your personally identifiable information, transmissions made by means of the Internet cannot be made absolutely secure. By using the website, you agree that the Company will have no liability for disclosure of your information due to errors in transmission and/or unauthorized acts of third parties.</string>
+    <string name="privacy27"><b>Please note that the Company will not ask you to share any sensitive data or information via email or telephone. If you receive any such request by email or telephone, please do not respond/provide any sensitive data or information and forward the information relating to the same to support@khojokhao.com  for necessary action.</b></string>
+    <string name="privacy28">Communication with Company</string>
+    <string name="privacy29">If you wish to correct or update any information you have provided, you may do so online, on the website itself. You may contact the Company to correct or update such information by sending an e-mail to: support@khojokhao.com </string>
+    <string name="privacy30">If access to the website is lost, you may contact the Company by sending an e-mail to: support@khojokhao.com.</string>
+
+</resources>

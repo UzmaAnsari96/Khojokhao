@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.NewAddressAddingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="New Address"
+            android:textColor="@color/colorBlack1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="15dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Flat no/House"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/edt_flatno"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/edittext_search"
+                            android:hint="Enter Flatno/House No"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Building Name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_bldgName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/edittext_search"
+                        android:hint="Enter Building Name"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Landmark"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/edittext_search"
+                        android:hint="Enter Landmark"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Street Name/Area Name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/edittext_search"
+                        android:hint="Enter Area Name"
+                        android:inputType="text"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:onClick="city"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Sector"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_sector"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext_search"
+                        android:hint="Enter Sector"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Pincode"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext_search">
+
+                        <EditText
+                            android:id="@+id/edt_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:maxLength="6"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:background="@color/colorWhite"
+                            android:hint="Enter Pincode"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/rel_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:layout_marginHorizontal="5dp">
+
+                            <ImageView
+                                android:id="@+id/img_right"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_check_black_24dp"
+                                android:tint="@color/colorGreen"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone"/>
+
+                            <ImageView
+                                android:id="@+id/img_wrong"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_clear_black_24dp"
+                                android:tint="@android:color/holo_red_dark" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="35dp"
+                android:background="@drawable/green_button_layout"
+                android:text="Add"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

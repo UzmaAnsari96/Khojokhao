@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HelpAndSupportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <TextView
+                android:id="@+id/txt_orderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Help and Support"
+                android:textColor="@color/colorBlack1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="Email" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#077A6F"
+                android:textStyle="bold"
+                android:onClick="email"
+                android:layout_gravity="center_horizontal"
+                android:text="support@khojokhao.com" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:visibility="visible"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="Call or Whatsapp us" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:textColor="#077A6F"
+                android:onClick="call"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="+91 6003040736" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

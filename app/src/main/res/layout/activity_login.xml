@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:isScrollContainer="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_logo"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="15dp"
+                    android:padding="5dp"
+                    android:text="Sign in"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@drawable/full_curve_backgorund_layout"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="10dp"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:layout_marginVertical="30dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Let’s get started !"
+                                                android:textColor="@color/colorBlack"
+                                                android:textSize="17sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Enter Your Mobile Number "
+                                                android:textColor="@color/colorBlack"
+                                                android:textSize="12sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="30dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:padding="5dp"
+                                                android:text="+91"
+                                                android:textColor="@color/colorBlack"
+                                                android:textSize="16sp" />
+
+                                            <EditText
+                                                android:id="@+id/edt_mobile"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginHorizontal="15dp"
+                                                android:layout_weight="1"
+                                                android:background="@null"
+                                                android:hint="Mobile Number"
+                                                android:inputType="number"
+                                                android:maxLength="10"
+                                                android:padding="5dp"
+                                                android:textSize="15sp" />
+                                        </LinearLayout>
+
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0.5dp"
+                                            android:layout_marginHorizontal="30dp"
+                                            android:background="@color/colorBlack" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginHorizontal="30dp"
+                                            android:layout_marginTop="40dp"
+                                            android:orientation="horizontal">
+
+                                            <CheckBox
+                                                android:id="@+id/check_tnc"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="I agree to the"
+                                                android:textColor="@color/colorBlack"
+                                                android:textSize="14dp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="3dp"
+                                                android:onClick="Terms"
+                                                android:text="@string/term"
+                                                android:textColor="@color/colorBlue"
+                                                android:textColorLink="@color/colorPrimary"
+                                                android:textSize="13dp" />
+
+                                        </LinearLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_gravity="right"
+                                            android:layout_marginHorizontal="25dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="50dp"
+                                            android:gravity="center"
+                                            android:onClick="forgot"
+                                            android:padding="5dp"
+                                            android:text="Forgot Password?"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="15sp"
+                                            android:visibility="gone" />
+
+                                        <Button
+                                            android:id="@+id/btn_process"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/blue_background_layout"
+                                            android:paddingHorizontal="10dp"
+                                            android:text="Login"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorWhite"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:id="@+id/txt_account"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:layout_marginTop="15dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:gravity="center"
+                                            android:onClick="register"
+                                            android:padding="5dp"
+                                            android:text=""
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="15sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:layout_marginVertical="20dp"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="Best quality at best price"
+                                            android:textColor="@color/colorBlack2"
+                                            android:textSize="16dp"
+                                            android:visibility="gone" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

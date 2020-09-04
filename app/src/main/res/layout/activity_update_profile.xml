@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.UpdateProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_orderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Edit Profile"
+            android:textColor="@color/colorBlack1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/avtar"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="First Name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Your First Name Here"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Last Name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Your Last Name Here"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Email"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Your Email ID Here"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Mobile Number"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Enter Your Mobile Here"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="Pincode"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/edt_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:digits="0123456789"
+                    android:hint="Enter Your Pincode Here"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:text="DOB"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Select Your DOB From The Calender"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorBlack"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/blue_background_layout"
+                android:paddingHorizontal="15dp"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
