@@ -159,19 +159,26 @@ public class ShopyBalanceActivity extends AppCompatActivity {
                             JSONArray jsonArray = jsonObject.getJSONArray("result");
                             for (int i = 0; i < jsonArray.length(); i++) {
                                 JSONObject jsonObject1 = jsonArray.getJSONObject(i);
-                                WalletHistoryModel model = new WalletHistoryModel();
-                                model.setCustomer_id(jsonObject1.getString("customer_id"));
-                                model.setOpening_bal(jsonObject1.getString("opening_bal"));
-                                model.setClosing_bal(jsonObject1.getString("closing_bal"));
-                                model.setCredit(jsonObject1.getString("credit"));
-                                model.setDebit(jsonObject1.getString("debit"));
-                                model.setC_d_date(jsonObject1.getString("c_d_date"));
-                                walletHistoryModelArrayList.add(model);
+                                if(!jsonObject1.getString("debit").equals("0")) {
+                                    WalletHistoryModel model = new WalletHistoryModel();
+                                    model.setCustomer_id(jsonObject1.getString("customer_id"));
+                                    model.setOpening_bal(jsonObject1.getString("opening_bal"));
+                                    model.setClosing_bal(jsonObject1.getString("closing_bal"));
+                                    model.setCredit(jsonObject1.getString("credit"));
+                                    model.setDebit(jsonObject1.getString("debit"));
+                                    model.setC_d_date(jsonObject1.getString("c_d_date"));
+                                    walletHistoryModelArrayList.add(model);
+                                }
                             }
-                            WalletAdapter adapter = new WalletAdapter();
-                            rec_list.setAdapter(adapter);
-                            rec_list.setVisibility(View.VISIBLE);
-                            txt_history.setVisibility(View.VISIBLE);
+                            if(walletHistoryModelArrayList.size() != 0) {
+                                WalletAdapter adapter = new WalletAdapter();
+                                rec_list.setAdapter(adapter);
+                                rec_list.setVisibility(View.VISIBLE);
+                                txt_history.setVisibility(View.VISIBLE);
+                            }else{
+                                rec_list.setVisibility(View.GONE);
+                                txt_history.setVisibility(View.GONE);
+                            }
                         }else{
                             rec_list.setVisibility(View.GONE);
                             txt_history.setVisibility(View.GONE);

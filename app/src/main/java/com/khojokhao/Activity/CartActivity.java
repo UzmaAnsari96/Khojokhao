@@ -1576,6 +1576,7 @@ public class CartActivity extends AppCompatActivity {
     public class SlotAdapter extends RecyclerView.Adapter<SlotAdapter.ViewHolder> {
         Context context;
         private RadioButton selectedRadioButton;
+        String Day="";
 
         public SlotAdapter(Context context) {
             this.context = context;
@@ -1608,7 +1609,23 @@ public class CartActivity extends AppCompatActivity {
             }
 
             public void bind(final SlotModel model, final int position) {
-                txt_time.setText("Expected Delivery by " + model.getDay());
+                if(model.getDay().equals("Mon")){
+                    Day = "Monday";
+                }else if(model.getDay().equals("Tue")){
+                    Day = "Tuesday";
+                }else if(model.getDay().equals("Wed")){
+                    Day = "Wednesday";
+                }else if(model.getDay().equals("Thu")){
+                    Day = "Thursday";
+                }else if(model.getDay().equals("Fri")){
+                    Day = "Friday";
+                }else if(model.getDay().equals("Sat")){
+                    Day = "Saturday";
+                }else if(model.getDay().equals("Sun")){
+                    Day = "Sunday";
+                }
+
+                txt_time.setText("Expected Delivery by " + Day);
                 rb_time.setText(model.getSlot_timing());
                 rb_time.setChecked(false);
                 /*selectedRadioButton.setChecked(false);*/
