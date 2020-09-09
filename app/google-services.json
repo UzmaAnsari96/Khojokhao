@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "817443306740",
-    "firebase_url": "https://khajokhojou.firebaseio.com",
-    "project_id": "khajokhojou",
-    "storage_bucket": "khajokhojou.appspot.com"
+    "project_number": "68354817785",
+    "firebase_url": "https://khojokhao-3f985.firebaseio.com",
+    "project_id": "khojokhao-3f985",
+    "storage_bucket": "khojokhao-3f985.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:817443306740:android:908b010691f87f1b9f32a1",
+        "mobilesdk_app_id": "1:68354817785:android:379908a6dbe569a2d8ec28",
         "android_client_info": {
           "package_name": "com.khojokhao"
         }
       },
       "oauth_client": [
         {
-          "client_id": "817443306740-qarqb6870klpqdn3gstdqij88ufq1iuq.apps.googleusercontent.com",
+          "client_id": "68354817785-rf44hq1htjhmuld0urg50egv5rrplvbs.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDHqLtCuez2XVxVPLkThbOfII6mQgpjv30"
+          "current_key": "AIzaSyCLDzqw8UqSa82SyRIxm5oBcCpO4A7GBVE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "817443306740-qarqb6870klpqdn3gstdqij88ufq1iuq.apps.googleusercontent.com",
+              "client_id": "68354817785-rf44hq1htjhmuld0urg50egv5rrplvbs.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

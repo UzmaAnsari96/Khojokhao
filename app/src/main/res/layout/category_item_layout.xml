@@ -9,7 +9,7 @@
         android:id="@+id/card_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="10dp"
         android:layout_weight="1"
         app:cardCornerRadius="10dp"
@@ -39,8 +39,10 @@
                 android:layout_gravity="center"
                 android:layout_marginVertical="8dp"
                 android:text="Vegetable"
+                android:gravity="center"
                 android:textColor="@color/colorBlack"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

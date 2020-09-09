@@ -109,6 +109,7 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="7dp"
             android:layout_weight="1"
+            android:visibility="gone"
             android:background="@drawable/white_semicircle_background_layout">
 
             <TextView
@@ -126,6 +127,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="7dp"
+            android:layout_marginLeft="8dp"
             android:layout_weight="1"
             android:background="@drawable/white_semicircle_background_layout">
 

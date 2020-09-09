@@ -1120,7 +1120,7 @@ public class OffersProductListActivity extends AppCompatActivity {
                                 model.setImage(jsonObject1.getString("image"));
 //                                model.setFlag(jsonObject1.getString("flag"));
                                 model.setQty(jsonObject1.getString("qty"));
-//                                model.setType(jsonObject1.getString("type"));
+                                model.setType(jsonObject1.getString("type"));
                                 /*JSONArray jsonArray1 = jsonObject1.getJSONArray("price_details");
                                 JSONObject jsonObject2 = jsonArray1.getJSONObject(0);*/
                                 model.setUnit(jsonObject1.getString("unit"));
@@ -1291,6 +1291,10 @@ public class OffersProductListActivity extends AppCompatActivity {
                 if (model.getType().equals("0")) {
                     rel_subs.setVisibility(View.GONE);
                 }*/
+
+                if (model.getType().equals("0")) {
+                    btn_subscribe.setVisibility(View.INVISIBLE);
+                }
 
                 if (model.getQty().equals("0")) {
                     rel_cart.setVisibility(View.GONE);

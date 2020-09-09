@@ -77,7 +77,7 @@ public class HomeActivity extends AppCompatActivity {
     RelativeLayout rel_home, rel_search, rel_cart, rel_subscription, rel_account;
     RecyclerView recyc_recommended, rec_category;
     LinearLayout lnr_recommend;
-    TextView txt_cart_count, txt_address;
+    TextView txt_cart_count, txt_address,txt_search;
     RelativeLayout rel_cart_count;
     PrefManager prefManager;
     ArrayList<BannerModel> bannerModelArrayList = new ArrayList<>();
@@ -450,8 +450,8 @@ public class HomeActivity extends AppCompatActivity {
         lnr_home_selected.setVisibility(View.VISIBLE);
         lnr_home.setVisibility(View.GONE);
 
-        lnr_search.setVisibility(View.VISIBLE);
-        lnr_search_selected.setVisibility(View.GONE);
+//        lnr_search.setVisibility(View.VISIBLE);
+//        lnr_search_selected.setVisibility(View.GONE);
 
         lnr_cart.setVisibility(View.VISIBLE);
         lnr_cart_selected.setVisibility(View.GONE);
@@ -463,7 +463,7 @@ public class HomeActivity extends AppCompatActivity {
         lnr_account_selected.setVisibility(View.GONE);
         cartCount();
 
-        getrecommendList();
+//        getrecommendList();
         if (FunctionConstant.GPSRuntime(HomeActivity.this)) {
             getCurrentLocation();
         } else {
@@ -482,8 +482,8 @@ public class HomeActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.VISIBLE);
                 lnr_home.setVisibility(View.GONE);
 
-                lnr_search.setVisibility(View.VISIBLE);
-                lnr_search_selected.setVisibility(View.GONE);
+//                lnr_search.setVisibility(View.VISIBLE);
+//                lnr_search_selected.setVisibility(View.GONE);
 
                 lnr_cart.setVisibility(View.VISIBLE);
                 lnr_cart_selected.setVisibility(View.GONE);
@@ -502,8 +502,8 @@ public class HomeActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.GONE);
                 lnr_home.setVisibility(View.VISIBLE);
 
-                lnr_search.setVisibility(View.GONE);
-                lnr_search_selected.setVisibility(View.VISIBLE);
+//                lnr_search.setVisibility(View.GONE);
+//                lnr_search_selected.setVisibility(View.VISIBLE);
 
                 lnr_cart.setVisibility(View.VISIBLE);
                 lnr_cart_selected.setVisibility(View.GONE);
@@ -525,8 +525,8 @@ public class HomeActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.GONE);
                 lnr_home.setVisibility(View.VISIBLE);
 
-                lnr_search.setVisibility(View.VISIBLE);
-                lnr_search_selected.setVisibility(View.GONE);
+//                lnr_search.setVisibility(View.VISIBLE);
+//                lnr_search_selected.setVisibility(View.GONE);
 
                 lnr_cart.setVisibility(View.GONE);
                 lnr_cart_selected.setVisibility(View.VISIBLE);
@@ -547,8 +547,8 @@ public class HomeActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.GONE);
                 lnr_home.setVisibility(View.VISIBLE);
 
-                lnr_search.setVisibility(View.VISIBLE);
-                lnr_search_selected.setVisibility(View.GONE);
+//                lnr_search.setVisibility(View.VISIBLE);
+//                lnr_search_selected.setVisibility(View.GONE);
 
                 lnr_cart.setVisibility(View.VISIBLE);
                 lnr_cart_selected.setVisibility(View.GONE);
@@ -571,8 +571,8 @@ public class HomeActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.GONE);
                 lnr_home.setVisibility(View.VISIBLE);
 
-                lnr_search.setVisibility(View.VISIBLE);
-                lnr_search_selected.setVisibility(View.GONE);
+//                lnr_search.setVisibility(View.VISIBLE);
+//                lnr_search_selected.setVisibility(View.GONE);
 
                 lnr_cart.setVisibility(View.VISIBLE);
                 lnr_cart_selected.setVisibility(View.GONE);
@@ -691,6 +691,7 @@ public class HomeActivity extends AppCompatActivity {
         rel_account = findViewById(R.id.rel_account);
         recyc_recommended = findViewById(R.id.recyc_recommended);
         rec_category = findViewById(R.id.rec_category);
+        txt_search = findViewById(R.id.txt_search);
         rec_category.setLayoutManager(new GridLayoutManager(HomeActivity.this, 2));
         recyc_recommended.setLayoutManager(new LinearLayoutManager(HomeActivity.this, LinearLayoutManager.HORIZONTAL, false));
 
@@ -883,7 +884,6 @@ public class HomeActivity extends AppCompatActivity {
                                     model.setPrice(jsonObject2.getString("price"));
                                     model.setDiscount(jsonObject2.getString("discount"));
                                 }
-
                                 productModelArrayList.add(model);
                             }
                             RecommendedAdapter adapter = new RecommendedAdapter(HomeActivity.this);
