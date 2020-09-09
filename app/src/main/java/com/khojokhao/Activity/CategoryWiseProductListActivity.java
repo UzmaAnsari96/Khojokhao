@@ -864,8 +864,8 @@ public class CategoryWiseProductListActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.VISIBLE);
                 lnr_home.setVisibility(View.GONE);
 
-                lnr_search.setVisibility(View.VISIBLE);
-                lnr_search_selected.setVisibility(View.GONE);
+//                lnr_search.setVisibility(View.VISIBLE);
+//                lnr_search_selected.setVisibility(View.GONE);
 
                 lnr_cart.setVisibility(View.VISIBLE);
                 lnr_cart_selected.setVisibility(View.GONE);
@@ -886,8 +886,8 @@ public class CategoryWiseProductListActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.GONE);
                 lnr_home.setVisibility(View.VISIBLE);
 
-                lnr_search.setVisibility(View.GONE);
-                lnr_search_selected.setVisibility(View.VISIBLE);
+//                lnr_search.setVisibility(View.GONE);
+//                lnr_search_selected.setVisibility(View.VISIBLE);
 
                 lnr_cart.setVisibility(View.VISIBLE);
                 lnr_cart_selected.setVisibility(View.GONE);
@@ -909,8 +909,8 @@ public class CategoryWiseProductListActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.GONE);
                 lnr_home.setVisibility(View.VISIBLE);
 
-                lnr_search.setVisibility(View.VISIBLE);
-                lnr_search_selected.setVisibility(View.GONE);
+//                lnr_search.setVisibility(View.VISIBLE);
+//                lnr_search_selected.setVisibility(View.GONE);
 
                 lnr_cart.setVisibility(View.GONE);
                 lnr_cart_selected.setVisibility(View.VISIBLE);
@@ -931,8 +931,8 @@ public class CategoryWiseProductListActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.GONE);
                 lnr_home.setVisibility(View.VISIBLE);
 
-                lnr_search.setVisibility(View.VISIBLE);
-                lnr_search_selected.setVisibility(View.GONE);
+//                lnr_search.setVisibility(View.VISIBLE);
+//                lnr_search_selected.setVisibility(View.GONE);
 
                 lnr_cart.setVisibility(View.VISIBLE);
                 lnr_cart_selected.setVisibility(View.GONE);
@@ -955,8 +955,8 @@ public class CategoryWiseProductListActivity extends AppCompatActivity {
                 lnr_home_selected.setVisibility(View.GONE);
                 lnr_home.setVisibility(View.VISIBLE);
 
-                lnr_search.setVisibility(View.VISIBLE);
-                lnr_search_selected.setVisibility(View.GONE);
+//                lnr_search.setVisibility(View.VISIBLE);
+//                lnr_search_selected.setVisibility(View.GONE);
 
                 lnr_cart.setVisibility(View.VISIBLE);
                 lnr_cart_selected.setVisibility(View.GONE);
@@ -979,8 +979,8 @@ public class CategoryWiseProductListActivity extends AppCompatActivity {
         lnr_home_selected.setVisibility(View.VISIBLE);
         lnr_home.setVisibility(View.GONE);
 
-        lnr_search.setVisibility(View.VISIBLE);
-        lnr_search_selected.setVisibility(View.GONE);
+//        lnr_search.setVisibility(View.VISIBLE);
+//        lnr_search_selected.setVisibility(View.GONE);
 
         lnr_cart.setVisibility(View.VISIBLE);
         lnr_cart_selected.setVisibility(View.GONE);

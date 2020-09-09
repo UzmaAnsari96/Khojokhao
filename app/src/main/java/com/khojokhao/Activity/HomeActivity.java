@@ -1005,8 +1005,6 @@ public class HomeActivity extends AppCompatActivity {
         public void onBindViewHolder(@NonNull ItemViewholder holder, int position) {
             ProductModel model = productModelArrayList.get(position);
             ((ItemViewholder) holder).bind(model, position);
-
-
         }
 
         @Override
