@@ -360,7 +360,6 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
 
             <LinearLayout
@@ -412,10 +411,8 @@
                             android:gravity="center"
                             android:fontFamily="serif"
                             android:padding="5dp"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
-
-
                     </RelativeLayout>
 
                     <View

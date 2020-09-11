@@ -29,9 +29,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
+            android:fontFamily="serif"
             android:padding="5dp"
             android:text=""
-            android:fontFamily="serif"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -41,8 +41,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tool"
-        android:layout_above="@+id/card_bottom">
+        android:layout_above="@+id/card_bottom"
+        android:layout_below="@+id/tool">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -99,15 +99,15 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="7dp"
             android:layout_weight="1"
-            android:visibility="gone"
-            android:background="@drawable/white_semicircle_background_layout">
+            android:background="@drawable/white_semicircle_background_layout"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Weekly"
-                android:fontFamily="serif"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -125,9 +125,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Daily"
-                android:fontFamily="serif"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
         </LinearLayout>
@@ -144,9 +144,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Customize"
-                android:fontFamily="serif"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
         </LinearLayout>
@@ -163,9 +163,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Cancel"
-                android:fontFamily="serif"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
         </LinearLayout>
@@ -176,21 +176,21 @@
         android:id="@+id/txt_nodata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="no data found"
-        android:fontFamily="serif"
         android:layout_centerInParent="true"
-        android:textSize="15sp"
-        android:visibility="gone"
+        android:fontFamily="serif"
+        android:padding="5dp"
+        android:text="no data found"
         android:textColor="@color/black"
-        android:padding="5dp"/>
+        android:textSize="15sp"
+        android:visibility="gone" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_mySubscription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="10dp"
         android:layout_above="@+id/card_bottom"
         android:contextClickable="false"
+        android:elevation="10dp"
         android:visibility="gone"
         app:cardCornerRadius="5dp">
 
@@ -203,31 +203,33 @@
                 android:id="@+id/img_close"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:padding="5dp"
+                android:layout_gravity="right"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ic_close_black_24dp"
-                android:layout_gravity="right"/>
+                android:padding="5dp"
+                android:src="@drawable/ic_close_black_24dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="5dp"
-                android:text="Choose The Starting Date Of Description"
-                android:textStyle="bold"
-                android:fontFamily="serif"/>
+                android:fontFamily="serif"
+                android:text="Choose The Starting Date Of Subscription"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginVertical="10dp">
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/txt_from"
@@ -235,9 +237,9 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="5dp"
+                        android:fontFamily="serif"
                         android:text="From"
                         android:textSize="15sp"
-                        android:fontFamily="serif"
                         android:textStyle="bold" />
 
                     <RelativeLayout
@@ -253,9 +255,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
+                            android:fontFamily="serif"
                             android:hint="DD/MM/YY"
                             android:padding="10dp"
-                            android:fontFamily="serif"
                             android:textSize="15sp" />
 
                         <ImageView
@@ -263,11 +265,22 @@
                             android:layout_height="30dp"
                             android:layout_centerVertical="true"
                             android:layout_marginHorizontal="5dp"
-                            android:padding="5dp"
                             android:layout_toRightOf="@+id/txt_fromdate"
+                            android:padding="5dp"
                             android:src="@drawable/ic_date_range_black_24dp"
                             android:tint="@color/colorGreen" />
                     </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="right|center"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/txt_to"
@@ -275,7 +288,6 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="5dp"
-                        android:layout_toRightOf="@+id/rel_from"
                         android:text="To"
                         android:fontFamily="serif"
                         android:textSize="15sp"
@@ -329,9 +341,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginHorizontal="10dp"
                         android:layout_marginVertical="5dp"
+                        android:fontFamily="serif"
                         android:text="Select the days"
-                        android:textStyle="bold"
-                        android:fontFamily="serif"/>
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -339,7 +351,6 @@
                         android:layout_marginHorizontal="10dp"
                         android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
-
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -361,9 +372,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="S"
-                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -380,11 +391,11 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="S"
-                                    android:fontFamily="serif"
-                                    android:textColor="@color/white"
                                     android:textAlignment="center"
+                                    android:textColor="@color/white"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </RelativeLayout>
@@ -410,9 +421,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="M"
-                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -429,11 +440,11 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="M"
-                                    android:fontFamily="serif"
-                                    android:textColor="@color/white"
                                     android:textAlignment="center"
+                                    android:textColor="@color/white"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </RelativeLayout>
@@ -460,9 +471,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="T"
-                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -479,11 +490,11 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="T"
-                                    android:fontFamily="serif"
-                                    android:textColor="@color/white"
                                     android:textAlignment="center"
+                                    android:textColor="@color/white"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </RelativeLayout>
@@ -510,9 +521,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="W"
-                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -529,11 +540,11 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="W"
-                                    android:fontFamily="serif"
-                                    android:textColor="@color/white"
                                     android:textAlignment="center"
+                                    android:textColor="@color/white"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </RelativeLayout>
@@ -560,9 +571,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="T"
-                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -579,11 +590,11 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="T"
-                                    android:fontFamily="serif"
-                                    android:textColor="@color/white"
                                     android:textAlignment="center"
+                                    android:textColor="@color/white"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </RelativeLayout>
@@ -610,9 +621,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="F"
-                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -629,11 +640,11 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="F"
-                                    android:fontFamily="serif"
-                                    android:textColor="@color/white"
                                     android:textAlignment="center"
+                                    android:textColor="@color/white"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </RelativeLayout>
@@ -660,9 +671,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
+                                    android:fontFamily="serif"
                                     android:gravity="center"
                                     android:text="S"
-                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -679,11 +690,11 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_gravity="center"
-                                    android:gravity="center"
-                                    android:textColor="@color/white"
-                                    android:text="S"
                                     android:fontFamily="serif"
+                                    android:gravity="center"
+                                    android:text="S"
                                     android:textAlignment="center"
+                                    android:textColor="@color/white"
                                     android:textStyle="bold" />
                             </LinearLayout>
                         </RelativeLayout>
@@ -692,18 +703,19 @@
 
 
                 </LinearLayout>
+
                 <Button
                     android:id="@+id/btn_submit"
                     android:layout_width="90dp"
                     android:layout_height="40dp"
                     android:layout_gravity="right"
+                    android:layout_marginHorizontal="15dp"
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/green_button_layout"
+                    android:fontFamily="serif"
                     android:onClick="addSubscription"
                     android:paddingLeft="5dp"
-                    android:layout_marginHorizontal="15dp"
                     android:text="Submit"
-                    android:fontFamily="serif"
                     android:textColor="@color/colorWhite"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -718,8 +730,8 @@
         android:id="@+id/card_bottom"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:cardBackgroundColor="@color/colorGreen"
         android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/colorGreen"
         app:cardElevation="10dp">
 
         <LinearLayout
@@ -756,8 +768,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Home"
                         android:fontFamily="serif"
+                        android:text="Home"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
@@ -790,8 +802,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Home"
                         android:fontFamily="serif"
+                        android:text="Home"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -805,8 +817,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:visibility="gone"
-                android:gravity="center">
+                android:gravity="center"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:id="@+id/lnr_search"
@@ -827,8 +839,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Search"
                         android:fontFamily="serif"
+                        android:text="Search"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -861,8 +873,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Search"
                         android:fontFamily="serif"
+                        android:text="Search"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -897,8 +909,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Cart"
                         android:fontFamily="serif"
+                        android:text="Cart"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -931,8 +943,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Cart"
                         android:fontFamily="serif"
+                        android:text="Cart"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -942,22 +954,22 @@
                     android:id="@+id/rel_cart_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="3dp"
-                    android:background="@drawable/red_circle_background">
+                    android:background="@drawable/red_circle_background"
+                    android:visibility="gone">
 
                     <TextView
                         android:id="@+id/txt_cart_count"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="99+"
-                        android:textSize="10sp"
-                        android:padding="4dp"
-                        android:gravity="center"
                         android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="99+"
                         android:textColor="@color/colorWhite"
-                        android:textStyle="bold"/>
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
             </RelativeLayout>
@@ -990,8 +1002,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Subscription"
                         android:fontFamily="serif"
+                        android:text="Subscription"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -1024,8 +1036,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Subscription"
                         android:fontFamily="serif"
+                        android:text="Subscription"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -1060,8 +1072,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Account"
                         android:fontFamily="serif"
+                        android:text="Account"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -1094,8 +1106,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Account"
                         android:fontFamily="serif"
+                        android:text="Account"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
