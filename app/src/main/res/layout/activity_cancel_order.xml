@@ -32,13 +32,16 @@
             android:text="ORDER #02154638"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
+            android:fontFamily="serif"
             android:textStyle="bold" />
 
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:isScrollContainer="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,6 +56,7 @@
                 android:text="Select cancellation reason"
                 android:textSize="17sp"
                 android:padding="5dp"
+                android:fontFamily="serif"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack"/>
 
@@ -69,6 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:paddingLeft="5dp"
+                    android:fontFamily="serif"
                     android:text="Ordered created by mistake"
                     android:textSize="15sp" />
 
@@ -78,6 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:paddingLeft="5dp"
+                    android:fontFamily="serif"
                     android:text="Item(s)would not arraive on time"
                     android:textSize="15sp" />
 
@@ -87,6 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:paddingLeft="5dp"
+                    android:fontFamily="serif"
                     android:text="Item price too high"
                     android:textSize="15sp" />
 
@@ -96,6 +103,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:paddingLeft="5dp"
+                    android:fontFamily="serif"
                     android:text="Found cheaper somewhere else"
                     android:textSize="15sp" />
 
@@ -105,6 +113,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:paddingLeft="5dp"
+                    android:fontFamily="serif"
                     android:text="Product Quality issue"
                     android:textSize="15sp" />
 
@@ -114,6 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:paddingLeft="5dp"
+                    android:fontFamily="serif"
                     android:text="Product Packaging issue"
                     android:textSize="15sp" />
 
@@ -123,6 +133,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:paddingLeft="5dp"
+                    android:fontFamily="serif"
                     android:text="Expired product delivered"
                     android:textSize="15sp" />
 
@@ -132,6 +143,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:paddingLeft="5dp"
+                    android:fontFamily="serif"
                     android:text="Other reasons"
                     android:textSize="15sp" />
 
@@ -141,6 +153,7 @@
                 android:id="@+id/edt_reason"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:fontFamily="serif"
                 android:background="@drawable/edittext_semi_rounded"
                 android:hint="cancellation reason"
                 android:layout_marginTop="15dp"
@@ -161,6 +174,7 @@
                 android:paddingHorizontal="10dp"
                 android:text="Submit"
                 android:textAllCaps="false"
+                android:fontFamily="serif"
                 android:textColor="@color/colorWhite"
                 android:textSize="15sp" />
         </LinearLayout>

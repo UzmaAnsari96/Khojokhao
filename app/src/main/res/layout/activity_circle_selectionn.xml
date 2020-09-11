@@ -34,6 +34,7 @@
             android:text="Select Area Name"
             android:layout_toRightOf="@+id/reficn"
             android:textColor="#FFFFFF"
+            android:fontFamily="serif"
             android:textSize="19dp" />
 
 
@@ -51,6 +52,7 @@
         android:layout_marginHorizontal="10dp"
         android:paddingLeft="10dp"
         android:hint="Search"
+        android:fontFamily="serif"
         android:drawableRight="@android:drawable/ic_menu_search"
         android:paddingRight="10dp" />
 
@@ -61,6 +63,7 @@
         android:layout_marginBottom="10dp"
         android:text=""
         android:visibility="gone"
+        android:fontFamily="serif"
         android:textSize="18sp"
         android:textStyle="bold" />
 

@@ -31,6 +31,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             android:text=""
+            android:fontFamily="serif"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -87,8 +88,8 @@
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="20dp"
-        android:background="@drawable/green_semi_circle_backgorund_layout"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorGreen"
         android:orientation="horizontal"
         android:visibility="gone">
 
@@ -107,6 +108,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Weekly"
+                android:fontFamily="serif"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -126,6 +128,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Daily"
+                android:fontFamily="serif"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
         </LinearLayout>
@@ -144,6 +147,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Customize"
+                android:fontFamily="serif"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
         </LinearLayout>
@@ -162,6 +166,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Cancel"
+                android:fontFamily="serif"
                 android:textAlignment="center"
                 android:textColor="@color/black" />
         </LinearLayout>
@@ -174,6 +179,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:padding="5dp"
+        android:fontFamily="serif"
         android:text="no data found"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -210,7 +216,8 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="5dp"
                 android:text="Choose The Starting Date Of Description"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -230,6 +237,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="5dp"
                         android:text="From"
+                        android:fontFamily="serif"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -247,6 +255,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:hint="DD/MM/YY"
+                            android:fontFamily="serif"
                             android:padding="10dp"
                             android:textSize="15sp" />
 
@@ -269,6 +278,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_toRightOf="@+id/rel_from"
                         android:text="To"
+                        android:fontFamily="serif"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
@@ -286,6 +296,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="5dp"
                             android:hint="DD/MM/YY"
+                            android:fontFamily="serif"
                             android:padding="10dp"
                             android:textSize="15sp" />
 
@@ -320,6 +331,7 @@
                         android:layout_marginHorizontal="10dp"
                         android:layout_marginVertical="5dp"
                         android:text="Select the days"
+                        android:fontFamily="serif"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -352,6 +364,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="S"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -370,6 +383,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="S"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textColor="@color/white"
                                     android:textStyle="bold" />
@@ -399,6 +413,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="M"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -417,6 +432,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="M"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textColor="@color/white"
                                     android:textStyle="bold" />
@@ -447,6 +463,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="T"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -465,6 +482,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="T"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textColor="@color/white"
                                     android:textStyle="bold" />
@@ -495,6 +513,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="W"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -513,6 +532,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="W"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textColor="@color/white"
                                     android:textStyle="bold" />
@@ -543,6 +563,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="T"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -561,6 +582,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="T"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textColor="@color/white"
                                     android:textStyle="bold" />
@@ -591,6 +613,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="F"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -609,6 +632,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="F"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textColor="@color/white"
                                     android:textStyle="bold" />
@@ -639,6 +663,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="S"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -657,6 +682,7 @@
                                     android:layout_gravity="center"
                                     android:gravity="center"
                                     android:text="S"
+                                    android:fontFamily="serif"
                                     android:textAlignment="center"
                                     android:textColor="@color/white"
                                     android:textStyle="bold" />
@@ -679,6 +705,7 @@
                     android:onClick="addSubscription"
                     android:paddingLeft="5dp"
                     android:text="Submit"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorWhite"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -733,6 +760,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Home"
+                        android:fontFamily="serif"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
@@ -766,6 +794,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Home"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -801,6 +830,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Search"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -834,6 +864,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Search"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -869,6 +900,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Cart"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -902,6 +934,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Cart"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -924,6 +957,7 @@
                         android:gravity="center"
                         android:padding="4dp"
                         android:text="99+"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="10sp"
                         android:textStyle="bold" />
@@ -960,6 +994,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Subscription"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -993,6 +1028,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Subscription"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -1028,6 +1064,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Account"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -1061,6 +1098,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Account"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -1078,6 +1116,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorGreen"
         android:text="Submit"
+        android:fontFamily="serif"
         android:visibility="gone"
         android:textColor="@color/colorWhite"
         android:textSize="15sp" />

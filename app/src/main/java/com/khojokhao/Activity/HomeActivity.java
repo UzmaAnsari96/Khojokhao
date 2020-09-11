@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
 import android.location.Geocoder;
@@ -24,6 +25,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,6 +47,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.gmail.samehadar.iosdialog.IOSDialog;
+import com.khojokhao.Model.QuntityModel;
 import com.smarteist.autoimageslider.IndicatorAnimations;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -64,6 +67,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -85,6 +89,8 @@ public class HomeActivity extends AppCompatActivity {
     ArrayList<ProductModel> productModelArrayList = new ArrayList<>();
     IOSDialog dialog;
     Double latitude, longitude;
+    LinearLayout lnr_offers;
+    RecyclerView rec_offers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,6 +105,7 @@ public class HomeActivity extends AppCompatActivity {
         onclick();
         getBanners();
         getCategoryList();
+        getProductList();
 
         if (!SharedPref.getBol(HomeActivity.this, SharedPref.appExit)) {
             if (!SharedPref.getBol(HomeActivity.this, SharedPref.pincodeChecked)) {
@@ -173,7 +180,7 @@ public class HomeActivity extends AppCompatActivity {
                     DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             requestQueue.add(stringRequest);
         } else {
-            FunctionConstant.noInternetDialog(HomeActivity.this, "no internet connection");
+//            FunctionConstant.noInternetDialog(HomeActivity.this, "no internet connection");
         }
     }
 
@@ -345,7 +352,22 @@ public class HomeActivity extends AppCompatActivity {
             requestQueue.add(stringRequest);
         } else {
             dismissDialog();
-            FunctionConstant.noInternetDialog(HomeActivity.this, "no internet connection");
+//            FunctionConstant.noInternetDialog(HomeActivity.this, "no internet connection");
+
+            final Dialog dialog = new Dialog(HomeActivity.this);
+            dialog.setContentView(R.layout.no_internet_dialog);
+            Button button = dialog.findViewById(R.id.btn_process);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getCategoryList();
+                    getBanners();
+                    getProductList();
+                    cartCount();
+                    dialog.dismiss();
+                }
+            });
+            dialog.show();
         }
     }
 
@@ -692,8 +714,11 @@ public class HomeActivity extends AppCompatActivity {
         recyc_recommended = findViewById(R.id.recyc_recommended);
         rec_category = findViewById(R.id.rec_category);
         txt_search = findViewById(R.id.txt_search);
+        lnr_offers = findViewById(R.id.lnr_offers);
+        rec_offers = findViewById(R.id.rec_offers);
         rec_category.setLayoutManager(new GridLayoutManager(HomeActivity.this, 2));
         recyc_recommended.setLayoutManager(new LinearLayoutManager(HomeActivity.this, LinearLayoutManager.HORIZONTAL, false));
+        rec_offers.setLayoutManager(new LinearLayoutManager(HomeActivity.this, LinearLayoutManager.HORIZONTAL, false));
 
     }
 
@@ -778,7 +803,7 @@ public class HomeActivity extends AppCompatActivity {
             requestQueue.add(stringRequest);
         } else {
             dismissDialog();
-            FunctionConstant.noInternetDialog(HomeActivity.this, "no internet connection");
+//            FunctionConstant.noInternetDialog(HomeActivity.this, "no internet connection");
         }
     }
 
@@ -921,6 +946,232 @@ public class HomeActivity extends AppCompatActivity {
         } else {
             dismissDialog();
             FunctionConstant.noInternetDialog(HomeActivity.this, "no internet connection");
+        }
+    }
+
+    public void viewAll(View view){
+        startActivity(new Intent(HomeActivity.this , OffersProductListActivity.class));
+    }
+
+    public void getProductList() {
+        dialog.show();
+        if (APIURLs.isNetwork(HomeActivity.this)) {
+            StringRequest stringRequest = new StringRequest(Request.Method.POST, APIURLs.offer_wise_product, new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    try {
+                        JSONObject jsonObject = new JSONObject(response);
+                        String status = jsonObject.getString("status");
+                        if (status.equals("1")) {
+                            productModelArrayList = new ArrayList<>();
+                          /*  productId = new ArrayList<>();
+                            unitArrayList = new ArrayList<>();
+                            unitArrayList = new ArrayList<>();
+                            qtyArrayList = new ArrayList<>();
+                            discountArrayList = new ArrayList<>();*/
+                            JSONArray jsonArray = jsonObject.getJSONArray("result");
+                            for (int i = 0; i < jsonArray.length(); i++) {
+                                JSONObject jsonObject1 = jsonArray.getJSONObject(i);
+                                ProductModel model = new ProductModel();
+                                model.setProduct_id(jsonObject1.getString("product_id"));
+                                model.setProduct_name(jsonObject1.getString("product_name"));
+                                model.setImage(jsonObject1.getString("image"));
+//                                model.setFlag(jsonObject1.getString("flag"));
+                                model.setQty(jsonObject1.getString("qty"));
+                                model.setType(jsonObject1.getString("type"));
+                                /*JSONArray jsonArray1 = jsonObject1.getJSONArray("price_details");
+                                JSONObject jsonObject2 = jsonArray1.getJSONObject(0);*/
+                                model.setUnit(jsonObject1.getString("unit"));
+                                model.setPrice(jsonObject1.getString("price"));
+                                model.setDiscount(jsonObject1.getString("discount"));
+                                productModelArrayList.add(model);
+                            }
+                            SellerAdapter adapter = new SellerAdapter();
+                            rec_offers.setAdapter(adapter);
+//                            adapter.setHasStableIds(true);
+//                            rec_list.setItemViewCacheSize(productModelArrayList.size()-1);
+//                            rec_list.setHasFixedSize(true);
+                            rec_offers.setVisibility(View.VISIBLE);
+                            lnr_offers.setVisibility(View.VISIBLE);
+                        } else {
+                            rec_offers.setVisibility(View.GONE);
+                            lnr_offers.setVisibility(View.GONE);
+                        }
+                        dismissDialog();
+                    } catch (JSONException e) {
+                        dismissDialog();
+                        e.printStackTrace();
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    dismissDialog();
+                    error.printStackTrace();
+                }
+            }) {
+                @Override
+                protected Map<String, String> getParams() throws AuthFailureError {
+                    HashMap<String, String> params = new HashMap<>();
+                    params.put("franchise_id", SharedPref.getVal(HomeActivity.this, SharedPref.fran_code));
+                    params.put("customer_id", SharedPref.getVal(HomeActivity.this, SharedPref.customer_id));
+                    return params;
+                }
+            };
+
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            stringRequest.setRetryPolicy(new DefaultRetryPolicy(50000, DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+            requestQueue.add(stringRequest);
+        } else {
+            dismissDialog();
+//            FunctionConstant.noInternetDialog(HomeActivity.this, "no internet connection");
+        }
+    }
+
+    public class SellerAdapter extends RecyclerView.Adapter<SellerAdapter.ViewHolder> {
+        Double actualAmout;
+        Double discount;
+        Double payableAmt;
+        int size;
+
+        @NonNull
+        @Override
+        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            View view = LayoutInflater.from(HomeActivity.this).inflate(R.layout.offers_item_layout, parent, false);
+            return new ViewHolder(view);
+        }
+
+        @Override
+        public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+            final ProductModel model = productModelArrayList.get(position);
+            ((ViewHolder) holder).bind(model, position);
+            /*if (position == productModelArrayList.size()) {
+                *//*holder.rel_viewMore.setVisibility(View.VISIBLE);
+                holder.lnr_details.setVisibility(View.GONE);*//*
+                if (position == 5) {
+                    holder.rel_viewMore.setVisibility(View.VISIBLE);
+                    holder.lnr_details.setVisibility(View.GONE);
+                }
+            } else {
+                if (position == 5) {
+                    holder.rel_viewMore.setVisibility(View.VISIBLE);
+                    holder.lnr_details.setVisibility(View.GONE);
+                }
+            }*/
+
+            holder.rel_viewMore.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(HomeActivity.this, OffersProductListActivity.class);
+//                    intent.putExtra("prod_id", model.getProduct_id());
+                    startActivity(intent);
+                }
+            });
+          /*  if(size>6){
+                if(position == 6){
+                    holder.rel_viewMore.setVisibility(View.VISIBLE);
+                    holder.lnr_details.setVisibility(View.GONE);
+                }
+            }else{
+                if(position == productModelArrayList.size()) {
+                    holder.rel_viewMore.setVisibility(View.VISIBLE);
+                    holder.lnr_details.setVisibility(View.GONE);
+                }
+            }*/
+        }
+
+        @Override
+        public int getItemCount() {
+            size = productModelArrayList.size();
+            if (size > 6) {
+                return 6;
+            } else {
+                return productModelArrayList.size();
+            }
+        }
+
+        public class ViewHolder extends RecyclerView.ViewHolder {
+            TextView txt_productName, txt_weight, txt_discountprice, txt_actualprice, txt_discount;
+            ImageView img_product;
+            LinearLayout lnr_details;
+            RelativeLayout rel_discount, rel_viewMore;
+
+            public ViewHolder(@NonNull View itemView) {
+                super(itemView);
+
+                txt_productName = itemView.findViewById(R.id.txt_productName);
+                txt_weight = itemView.findViewById(R.id.txt_weight);
+                txt_discountprice = itemView.findViewById(R.id.txt_discountprice);
+                txt_actualprice = itemView.findViewById(R.id.txt_actualprice);
+                img_product = itemView.findViewById(R.id.img_product);
+                lnr_details = itemView.findViewById(R.id.lnr_details);
+                rel_discount = itemView.findViewById(R.id.rel_discount);
+                rel_viewMore = itemView.findViewById(R.id.rel_viewMore);
+                txt_discount = itemView.findViewById(R.id.txt_discount);
+                txt_actualprice.setPaintFlags(txt_actualprice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+            }
+
+            public void bind(final ProductModel model, final int position) {
+                Picasso.with(HomeActivity.this).load(model.getImage())
+//                        .error(R.drawable.loader)
+//                        .placeholder(R.drawable.loader)
+                        .into(img_product);
+                txt_weight.setText(model.getUnit());
+                try {
+                    if (model.getDiscount().equals("0")) {
+                        txt_discountprice.setText("Rs." + model.getPrice());
+                        txt_actualprice.setVisibility(View.GONE);
+                        rel_discount.setVisibility(View.GONE);
+                    } else {
+                        txt_actualprice.setVisibility(View.VISIBLE);
+                        rel_discount.setVisibility(View.VISIBLE);
+                        actualAmout = Double.parseDouble(model.getPrice());
+                        discount = (actualAmout * Double.parseDouble(model.getDiscount())) / 100;
+                        payableAmt = actualAmout - discount;
+                        DecimalFormat twoDForm = new DecimalFormat("#");
+                        payableAmt = Double.valueOf(twoDForm.format(payableAmt));
+
+                        txt_discountprice.setText("Rs." + (int) Math.round(payableAmt * 100) / 100);
+                        txt_actualprice.setText("Rs." + model.getPrice());
+                        txt_discount.setText(model.getDiscount() + "% off");
+/*
+                        payableAmt = actualAmout - Double.parseDouble(model.getDiscount());
+
+                        txt_discountprice.setText("Rs." + (int) Math.round(payableAmt * 100) / 100);
+                        txt_actualprice.setText("Rs." + model.getPrice());
+                        txt_discount.setText("Save\n\u20B9" + model.getDiscount());*/
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                String productName = model.getProduct_name();
+                if (productName.length() > 13) {
+                    productName = productName.substring(0, 13);
+                    txt_productName.setText(productName + "...");
+                } else {
+                    txt_productName.setText(productName);
+                }
+
+                lnr_details.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                       /* if (position == productModelArrayList.size() - 1) {
+                            holder.rel_viewMore.setVisibility(View.VISIBLE);
+                            holder.lnr_details.setVisibility(View.GONE);
+                        } else {
+                            if (position == 5) {
+                                holder.rel_viewMore.setVisibility(View.VISIBLE);
+                                holder.lnr_details.setVisibility(View.GONE);
+                            }
+                        }*/
+                        Intent intent = new Intent(HomeActivity.this, ProductDetailsActivity.class);
+                        intent.putExtra("prod_id", model.getProduct_id());
+                        startActivity(intent);
+                    }
+                });
+            }
         }
     }
 

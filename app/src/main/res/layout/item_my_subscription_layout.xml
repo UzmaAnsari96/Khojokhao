@@ -26,6 +26,7 @@
             android:text="Subscription ID : xxxxx-xxxxx"
             android:textColor="@color/colorBlack"
             android:textSize="15dp"
+            android:fontFamily="serif"
             android:textStyle="bold" />
 
 
@@ -83,6 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Subscription Mode : Weekly"
+                    android:fontFamily="serif"
                     android:textSize="13dp" />
 
                 <TextView
@@ -90,7 +92,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Will be delivered on "
-                    android:textSize="13dp" />
+                    android:textSize="13dp"
+                    android:fontFamily="serif"/>
 
                 <TextView
                     android:id="@+id/txt_time"
@@ -98,6 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Today 2 : 30 PM"
+                    android:fontFamily="serif"
                     android:textSize="13dp" />
 
             </LinearLayout>
@@ -111,6 +115,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/green_button_layout"
                 android:text="Details"
+                android:fontFamily="serif"
                 android:textColor="@color/colorWhite"
                 android:textSize="15sp"
                 android:textStyle="bold" />

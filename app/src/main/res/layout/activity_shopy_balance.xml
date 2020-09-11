@@ -28,7 +28,8 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:padding="5dp"
-            android:text="711Basket Balance"
+            android:fontFamily="serif"
+            android:text="Khojo Khao Money"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -37,7 +38,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:isScrollContainer="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,9 +67,10 @@
                     android:textSize="15sp"
                     android:textColor="@color/colorBlack1"
                     android:textStyle="bold"
+                    android:fontFamily="serif"
                     android:layout_gravity="center_vertical"
                     android:layout_marginHorizontal="20dp"
-                    android:text="Veg Shopy Available Balance : 100.0"/>
+                    android:text="Khojo Khao Available Balance : 100.0"/>
 
             </LinearLayout>
 
@@ -78,6 +82,7 @@
                 android:textColor="@color/colorBlack1"
                 android:textStyle="bold"
                 android:padding="5dp"
+                android:fontFamily="serif"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="10dp"
                 android:text="Wallet History"/>

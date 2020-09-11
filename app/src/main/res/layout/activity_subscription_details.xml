@@ -38,6 +38,7 @@
                 android:padding="5dp"
                 android:paddingRight="10dp"
                 android:text="My Subscription"
+                android:fontFamily="serif"
                 android:textColor="@color/colorBlack1"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -132,6 +133,7 @@
                             android:text="Pause this whole subscription"
                             android:textColor="@color/colorBlack"
                             android:textSize="15dp"
+                            android:fontFamily="serif"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -158,6 +160,7 @@
                             android:layout_gravity="center"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="End this whole subscription"
                             android:textColor="@color/colorBlack"
                             android:textSize="15dp"
@@ -187,6 +190,7 @@
                             android:layout_gravity="center"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="Placed On"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -199,6 +203,7 @@
                             android:layout_marginLeft="45dp"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="dd-mm-yy"
                             android:textColor="@color/colorBlack"
                             android:textSize="15dp"
@@ -219,6 +224,7 @@
                             android:layout_gravity="center"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="Subscription end date"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -231,6 +237,7 @@
                             android:layout_marginLeft="10dp"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="dd-mm-yy"
                             android:textColor="@color/colorBlack"
                             android:textSize="15dp"
@@ -251,6 +258,7 @@
                             android:layout_gravity="center"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="Address"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -265,6 +273,7 @@
                             android:textColor="@color/colorBlack"
                             android:textSize="15dp"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:ellipsize="end"
                             android:textStyle="bold" />
                     </LinearLayout>
@@ -283,6 +292,7 @@
                             android:layout_gravity="center"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="Payment Mode"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -295,6 +305,7 @@
                             android:layout_marginLeft="10dp"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="net banking"
                             android:textColor="@color/colorBlack"
                             android:textSize="15dp"
@@ -315,6 +326,7 @@
                             android:layout_gravity="center"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="Amount Paid"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -327,6 +339,7 @@
                             android:layout_marginLeft="25dp"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="00 /-"
                             android:textColor="@color/colorBlack"
                             android:textSize="15dp"
@@ -348,6 +361,7 @@
                             android:layout_gravity="center"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="Payment Status"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -360,6 +374,7 @@
                             android:layout_marginLeft="5dp"
                             android:ellipsize="end"
                             android:maxLines="1"
+                            android:fontFamily="serif"
                             android:text="Paid"
                             android:textColor="@color/colorBlack"
                             android:textSize="15dp"
@@ -382,6 +397,7 @@
         android:layout_alignParentBottom="true"
         android:padding="10dp"
         android:text="Resubscribe"
+        android:fontFamily="serif"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
         android:background="@drawable/green_button_layout"

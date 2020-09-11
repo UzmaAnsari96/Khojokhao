@@ -30,17 +30,18 @@
             android:layout_weight="1"
             android:padding="5dp"
             android:text="Edit Profile"
+            android:fontFamily="serif"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        android:isScrollContainer="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="First Name"
+                    android:text="Full Name"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp" />
 
@@ -75,9 +76,10 @@
                     android:id="@+id/edt_fname"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:hint="Enter Your First Name Here"
+                    android:hint="Enter Your Full Name Here"
                     android:textColor="@color/colorBlack"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:fontFamily="serif"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -85,8 +87,10 @@
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
                     android:text="Last Name"
+                    android:visibility="gone"
                     android:textColor="@color/colorBlack"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:fontFamily="serif"/>
 
                 <EditText
                     android:id="@+id/edt_lname"
@@ -94,7 +98,9 @@
                     android:layout_height="50dp"
                     android:hint="Enter Your Last Name Here"
                     android:textColor="@color/colorBlack"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:fontFamily="serif"
+                    android:visibility="gone"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -102,6 +108,7 @@
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
                     android:text="Email"
+                    android:visibility="gone"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp" />
 
@@ -112,7 +119,9 @@
                     android:hint="Enter Your Email ID Here"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/colorBlack"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:fontFamily="serif"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -120,6 +129,7 @@
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
                     android:text="Mobile Number"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp" />
 
@@ -132,6 +142,7 @@
                     android:hint="Enter Your Mobile Here"
                     android:inputType="number"
                     android:maxLength="10"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp" />
 
@@ -141,6 +152,7 @@
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
                     android:text="Pincode"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp" />
 
@@ -151,6 +163,7 @@
                     android:digits="0123456789"
                     android:hint="Enter Your Pincode Here"
                     android:inputType="number"
+                    android:fontFamily="serif"
                     android:maxLength="6"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp" />
@@ -161,6 +174,7 @@
                     android:layout_marginTop="10dp"
                     android:padding="5dp"
                     android:text="DOB"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp"
                     android:visibility="gone" />
@@ -172,6 +186,7 @@
                     android:layout_marginTop="5dp"
                     android:hint="Select Your DOB From The Calender"
                     android:padding="5dp"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp"
                     android:visibility="gone" />
@@ -193,6 +208,7 @@
                 android:background="@drawable/blue_background_layout"
                 android:paddingHorizontal="15dp"
                 android:text="Update"
+                android:fontFamily="serif"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="15sp" />

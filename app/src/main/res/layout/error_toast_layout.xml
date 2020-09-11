@@ -30,6 +30,7 @@
             android:layout_gravity="center"
             android:text="Success"
             android:padding="5dp"
+            android:fontFamily="serif"
             android:layout_marginHorizontal="5dp"
             android:textSize="15sp"/>
     </LinearLayout>

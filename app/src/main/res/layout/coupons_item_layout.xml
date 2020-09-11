@@ -25,6 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:fontFamily="serif"
                 android:textColor="@color/colorGreen"
                 android:textSize="15sp"
                 android:textStyle="bold"/>
@@ -34,6 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
+                android:fontFamily="serif"
                 android:textColor="@color/colorBlack1"
                 android:textSize="13sp" />
 

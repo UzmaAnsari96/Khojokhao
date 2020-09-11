@@ -38,6 +38,7 @@
                     android:layout_weight="1"
                     android:padding="5dp"
                     android:text=""
+                    android:fontFamily="serif"
                     android:textColor="@color/colorBlack1"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -47,7 +48,6 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:background="@drawable/background_order_placed">
 
                 <ImageView
@@ -67,6 +67,7 @@
                     android:layout_marginTop="35dp"
                     android:layout_marginHorizontal="15dp"
                     android:text=""
+                    android:fontFamily="serif"
                     android:textAlignment="center"
                     android:textColor="@color/colorBlack"
                     android:textSize="25dp"
@@ -80,6 +81,7 @@
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginTop="25dp"
                     android:text=""
+                    android:fontFamily="serif"
                     android:textAlignment="center"
                     android:textSize="16dp"
                     android:textStyle="bold" />
@@ -93,11 +95,11 @@
                     android:background="@drawable/green_button_layout"
                     android:text="Continue Shopping"
                     android:onClick="goToHome"
+                    android:fontFamily="serif"
                     android:layout_marginTop="70dp"
                     android:textColor="@color/colorWhite"
                     android:textSize="15sp"
                     android:textStyle="bold" />
-
 
             </RelativeLayout>
 

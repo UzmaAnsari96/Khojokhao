@@ -28,6 +28,7 @@
                     android:text="WELCOME50"
                     android:textSize="18sp"
                     android:padding="5dp"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorGreen"
                     android:layout_weight="1"
                     android:textStyle="bold"/>
@@ -37,6 +38,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Apply"
+                    android:fontFamily="serif"
                     android:textSize="15sp"
                     android:padding="5dp"
                     android:visibility="visible"
@@ -51,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:text="Apply only for 1st order.Minimum cart value upto 500."
                 android:textSize="15sp"
+                android:fontFamily="serif"
                 android:paddingHorizontal="5dp"
                 android:textColor="@color/colorBlack1"
                 android:layout_weight="1"

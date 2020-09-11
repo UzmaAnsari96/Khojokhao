@@ -25,6 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="5dp"
+                android:fontFamily="serif"
                 android:text="Vashi Navi Mumbai \nMaharashtra"
                 android:textColor="@color/colorBlack1" />
 
@@ -45,6 +46,7 @@
                     android:layout_gravity="right"
                     android:gravity="center"
                     android:text="&#8942;"
+                    android:fontFamily="serif"
                     android:textAppearance="?android:textAppearanceLarge"
                     android:textColor="@color/colorBlack"
                     android:textSize="15sp"

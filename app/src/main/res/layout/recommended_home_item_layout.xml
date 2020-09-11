@@ -30,6 +30,7 @@
                 android:layout_marginTop="8dp"
                 android:text="Strawberries"
                 android:ellipsize="end"
+                android:fontFamily="serif"
                 android:textColor="@color/colorGreen"
                 android:textSize="15dp"
                 android:textStyle="bold" />
@@ -48,6 +49,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="500 gm"
+                    android:fontFamily="serif"
                     android:textSize="11dp" />
 
                 <TextView
@@ -58,6 +60,7 @@
                     android:layout_weight="1"
                     android:gravity="right"
                     android:text="2000/-"
+                    android:fontFamily="serif"
                     android:textSize="11dp" />
             </LinearLayout>
 

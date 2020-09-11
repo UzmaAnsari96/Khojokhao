@@ -122,9 +122,9 @@ public class UpdateProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (edt_fname.getText().toString().equals("")) {
-                    edt_fname.setError("Please enter first name");
+                    edt_fname.setError("Please enter full name");
                     edt_fname.requestFocus();
-                } else if (edt_lname.getText().toString().equals("")) {
+                } /*else if (edt_lname.getText().toString().equals("")) {
                     edt_lname.setError("Please enter last name");
                     edt_lname.requestFocus();
                 } else if (edt_email.getText().toString().equals("")) {
@@ -133,7 +133,7 @@ public class UpdateProfileActivity extends AppCompatActivity {
                 } else if (!FunctionConstant.isValidEmail(edt_email.getText().toString())) {
                     edt_email.setError("Please enter valid email id");
                     edt_email.requestFocus();
-                } else if (edt_pincode.getText().toString().equals("")) {
+                }*/ else if (edt_pincode.getText().toString().equals("")) {
                     edt_pincode.setError("Please enter pincode");
                 } else if (edt_pincode.getText().toString().length() != 6) {
                     edt_pincode.setError("Please enter valid pincode");

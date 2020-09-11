@@ -33,6 +33,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:padding="5dp"
+                android:fontFamily="serif"
                 android:text="Help and Support"
                 android:textColor="@color/colorBlack1"
                 android:textSize="16sp"
@@ -53,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:textStyle="bold"
+                android:fontFamily="serif"
                 android:layout_gravity="center_horizontal"
                 android:text="Email" />
 
@@ -64,6 +66,7 @@
                 android:textColor="#077A6F"
                 android:textStyle="bold"
                 android:onClick="email"
+                android:fontFamily="serif"
                 android:layout_gravity="center_horizontal"
                 android:text="support@khojokhao.com" />
 
@@ -74,6 +77,7 @@
                 android:visibility="visible"
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
+                android:fontFamily="serif"
                 android:layout_gravity="center_horizontal"
                 android:text="Call or Whatsapp us" />
 
@@ -86,6 +90,7 @@
                 android:textColor="#077A6F"
                 android:onClick="call"
                 android:textStyle="bold"
+                android:fontFamily="serif"
                 android:layout_gravity="center_horizontal"
                 android:text="+91 6003040736" />
 

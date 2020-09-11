@@ -29,6 +29,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:padding="5dp"
+            android:fontFamily="serif"
             android:text="ORDER #02154638"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
@@ -42,6 +43,8 @@
             android:layout_marginHorizontal="10dp"
             android:padding="5dp"
             android:text="Help"
+            android:fontFamily="serif"
+            android:visibility="gone"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -67,6 +70,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:padding="5dp"
                 android:text="Cancel Order"
+                android:fontFamily="serif"
                 android:visibility="gone"
                 android:textColor="@color/colorRed"
                 android:textSize="16sp"
@@ -120,6 +124,7 @@
                             android:text=""
                             android:textColor="@color/colorGreen"
                             android:textSize="15sp"
+                            android:fontFamily="serif"
                             android:textStyle="bold" />
 
                         <TextView
@@ -127,6 +132,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="10sp" />
 
@@ -182,6 +188,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -191,6 +198,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="10sp" />
 
@@ -246,6 +254,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -255,6 +264,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="10sp" />
 
@@ -273,6 +283,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:padding="5dp"
                 android:text="View Items"
+                android:fontFamily="serif"
                 android:onClick="showProductItems"
                 android:textColor="@color/colorBlue"
                 android:textSize="16sp"
@@ -297,6 +308,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Order Details"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorBlack1"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -307,6 +319,7 @@
                         android:layout_marginTop="5dp"
                         android:padding="5dp"
                         android:text="Shipping Address"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorGreen"
                         android:textSize="17sp"
                         android:textStyle="bold" />
@@ -317,6 +330,7 @@
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="5dp"
                         android:text=""
+                        android:fontFamily="serif"
                         android:textColor="@color/colorBlack1"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -326,6 +340,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:padding="5dp"
+                        android:fontFamily="serif"
                         android:text="Payment Method"
                         android:textColor="@color/colorGreen"
                         android:textSize="17sp"
@@ -337,6 +352,7 @@
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="5dp"
                         android:text=""
+                        android:fontFamily="serif"
                         android:textColor="@color/colorBlack1"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -346,6 +362,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:padding="5dp"
+                        android:fontFamily="serif"
                         android:text="Order Summary"
                         android:textColor="@color/colorGreen"
                         android:textSize="17sp"
@@ -368,6 +385,7 @@
                             android:layout_centerVertical="true"
                             android:padding="5dp"
                             android:text="Unit Price"
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -380,6 +398,7 @@
                             android:gravity="right"
                             android:padding="5dp"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -397,6 +416,7 @@
                             android:layout_centerVertical="true"
                             android:padding="5dp"
                             android:text="Delivery Charges"
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -409,6 +429,7 @@
                             android:gravity="right"
                             android:padding="5dp"
                             android:text="FREE"
+                            android:fontFamily="serif"
                             android:textColor="@color/colorGreen"
                             android:textSize="15sp"
                             android:textStyle="normal" />
@@ -427,6 +448,7 @@
                             android:layout_centerVertical="true"
                             android:padding="5dp"
                             android:text="Discount"
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -439,6 +461,7 @@
                             android:gravity="right"
                             android:padding="5dp"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorRed"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -457,6 +480,7 @@
                             android:layout_centerVertical="true"
                             android:padding="5dp"
                             android:text="Coupon Amount"
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -469,6 +493,7 @@
                             android:gravity="right"
                             android:padding="5dp"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorRed"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -487,6 +512,7 @@
                             android:layout_centerVertical="true"
                             android:padding="5dp"
                             android:text="Wallet Balance"
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -499,6 +525,7 @@
                             android:gravity="right"
                             android:padding="5dp"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorRed"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -516,6 +543,7 @@
                             android:layout_centerVertical="true"
                             android:padding="5dp"
                             android:text="Subtotal"
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -528,6 +556,7 @@
                             android:gravity="right"
                             android:padding="5dp"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -551,6 +580,7 @@
                             android:layout_centerVertical="true"
                             android:padding="5dp"
                             android:text="Grand Total"
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -563,6 +593,7 @@
                             android:gravity="right"
                             android:padding="5dp"
                             android:text=""
+                            android:fontFamily="serif"
                             android:textColor="@color/colorBlack1"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -588,6 +619,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1"
+                    android:fontFamily="serif"
                     android:background="@drawable/blue_background_layout"
                     android:text="Write A Product Review"
                     android:textColor="@color/colorWhite"
@@ -599,6 +631,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="5dp"
                     android:layout_weight="1"
+                    android:fontFamily="serif"
                     android:background="@drawable/blue_background_layout"
                     android:text="Repeat This Cart"
                     android:textColor="@color/colorWhite"

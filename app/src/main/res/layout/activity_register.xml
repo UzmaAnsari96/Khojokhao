@@ -63,6 +63,7 @@
                     android:text="Please Enter Your Details"
                     android:textColor="@color/black"
                     android:textSize="20sp"
+                    android:fontFamily="serif"
                     android:textStyle="bold" />
 
 
@@ -105,7 +106,8 @@
                                         android:padding="5dp"
                                         android:text="Full Name"
                                         android:textColor="@color/colorBlack"
-                                        android:textSize="15sp" />
+                                        android:textSize="15sp"
+                                        android:fontFamily="serif"/>
 
                                     <EditText
                                         android:id="@+id/edt_fname"
@@ -113,7 +115,8 @@
                                         android:layout_height="50dp"
                                         android:hint="Enter Your Full Name Here"
                                         android:textColor="@color/colorBlack"
-                                        android:textSize="15sp" />
+                                        android:textSize="15sp"
+                                        android:fontFamily="serif"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -140,6 +143,7 @@
                                         android:layout_marginTop="10dp"
                                         android:padding="5dp"
                                         android:text="Email"
+                                        android:visibility="gone"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
 
@@ -150,13 +154,15 @@
                                         android:hint="Enter Your Email ID Here"
                                         android:inputType="textEmailAddress"
                                         android:textColor="@color/colorBlack"
-                                        android:textSize="15sp" />
+                                        android:textSize="15sp"
+                                        android:visibility="gone"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="10dp"
                                         android:padding="5dp"
+                                        android:fontFamily="serif"
                                         android:text="Mobile Number"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
@@ -169,7 +175,8 @@
                                         android:inputType="number"
                                         android:maxLength="10"
                                         android:textColor="@color/colorBlack"
-                                        android:textSize="15sp" />
+                                        android:textSize="15sp"
+                                        android:fontFamily="serif"/>
 
 
                                     <TextView
@@ -178,6 +185,7 @@
                                         android:layout_marginTop="10dp"
                                         android:padding="5dp"
                                         android:text="State Name"
+                                        android:fontFamily="serif"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
 
@@ -191,6 +199,7 @@
                                         android:hint="Select State Name"
                                         android:inputType="number"
                                         android:onClick="state"
+                                        android:fontFamily="serif"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
 
@@ -200,6 +209,7 @@
                                         android:layout_marginTop="10dp"
                                         android:padding="5dp"
                                         android:text="City Name"
+                                        android:fontFamily="serif"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
 
@@ -213,6 +223,7 @@
                                         android:hint="Select City Name"
                                         android:inputType="number"
                                         android:onClick="city"
+                                        android:fontFamily="serif"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
 
@@ -222,6 +233,7 @@
                                         android:layout_marginTop="10dp"
                                         android:padding="5dp"
                                         android:text="Pin Code"
+                                        android:fontFamily="serif"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
 
@@ -233,6 +245,7 @@
                                         android:hint="Enter Your Pincode Here"
                                         android:inputType="number"
                                         android:maxLength="6"
+                                        android:fontFamily="serif"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
 
@@ -241,6 +254,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="10dp"
                                         android:padding="5dp"
+                                        android:fontFamily="serif"
                                         android:text="Referral Code"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp" />
@@ -259,7 +273,8 @@
                                             android:background="@color/colorWhite"
                                             android:hint="Enter Your Referral Code Here"
                                             android:textColor="@color/colorBlack"
-                                            android:textSize="15sp" />
+                                            android:textSize="15sp"
+                                            android:fontFamily="serif"/>
 
                                         <ImageView
                                             android:id="@+id/img_scanner"
@@ -284,6 +299,7 @@
                                         android:layout_marginTop="10dp"
                                         android:padding="5dp"
                                         android:text="DOB"
+                                        android:fontFamily="serif"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp"
                                         android:visibility="gone" />
@@ -295,6 +311,7 @@
                                         android:layout_marginTop="5dp"
                                         android:hint="Select Your DOB From The Calender"
                                         android:padding="5dp"
+                                        android:fontFamily="serif"
                                         android:textColor="@color/colorBlack"
                                         android:textSize="15sp"
                                         android:visibility="gone" />
@@ -316,6 +333,7 @@
                                     android:background="@drawable/blue_background_layout"
                                     android:paddingHorizontal="10dp"
                                     android:text="Proceed"
+                                    android:fontFamily="serif"
                                     android:textAllCaps="false"
                                     android:textColor="@color/colorWhite"
                                     android:textSize="15sp" />

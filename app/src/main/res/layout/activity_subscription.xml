@@ -33,6 +33,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:padding="5dp"
+                android:fontFamily="serif"
                 android:paddingRight="10dp"
                 android:text="My Subscription"
                 android:textColor="@color/colorBlack1"
@@ -60,6 +61,7 @@
                 android:text="No Subscription Found"
                 android:layout_centerInParent="true"
                 android:textStyle="bold"
+                android:fontFamily="serif"
                 android:textSize="15sp"/>
 
         </RelativeLayout>

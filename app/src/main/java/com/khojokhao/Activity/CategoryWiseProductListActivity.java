@@ -1589,18 +1589,31 @@ public class CategoryWiseProductListActivity extends AppCompatActivity {
 
                 if (model.getType().equals("0")) {
                     btn_subscribe.setVisibility(View.INVISIBLE);
-                }
-
-
-                if (model.getQty().equals("0")) {
-                    rel_cart.setVisibility(View.GONE);
-                    btn_cart.setVisibility(View.VISIBLE);
-                } else {
-                    rel_cart.setVisibility(View.VISIBLE);
+//                    btn_cart.setVisibility(View.VISIBLE);
+                    if (model.getQty().equals("0")) {
+                        rel_cart.setVisibility(View.GONE);
+                        btn_cart.setVisibility(View.VISIBLE);
+                    } else {
+                        rel_cart.setVisibility(View.VISIBLE);
+                        btn_cart.setVisibility(View.GONE);
+                        qty = Integer.valueOf(model.getQty());
+                        txt_count.setText(String.valueOf(qty));
+                    }
+                }else{
+                    btn_subscribe.setVisibility(View.VISIBLE);
                     btn_cart.setVisibility(View.GONE);
-                    qty = Integer.valueOf(model.getQty());
-                    txt_count.setText(String.valueOf(qty));
                 }
+
+//
+//                if (model.getQty().equals("0")) {
+//                    rel_cart.setVisibility(View.GONE);
+//                    btn_cart.setVisibility(View.VISIBLE);
+//                } else {
+//                    rel_cart.setVisibility(View.VISIBLE);
+//                    btn_cart.setVisibility(View.GONE);
+//                    qty = Integer.valueOf(model.getQty());
+//                    txt_count.setText(String.valueOf(qty));
+//                }
 
                 btn_cart.setOnClickListener(new View.OnClickListener() {
                     @Override

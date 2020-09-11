@@ -217,7 +217,7 @@ public class AccountActivity extends AppCompatActivity {
         txt_mobile.setText(mobile_no);
         txt_email.setText(email_id);
         /*Glide.with(AccountActivity.this).load(photo).into(img_profile);*/
-        Picasso.with(AccountActivity.this).load(R.drawable.logo).into(img_profile);
+//        Picasso.with(AccountActivity.this).load(R.drawable.app_launcher).into(img_profile);
     }
 
 }

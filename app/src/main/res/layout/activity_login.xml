@@ -39,6 +39,7 @@
                     android:layout_marginVertical="15dp"
                     android:padding="5dp"
                     android:text="Sign in"
+                    android:fontFamily="serif"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -88,14 +89,16 @@
                                                 android:layout_height="wrap_content"
                                                 android:text="Let’s get started !"
                                                 android:textColor="@color/colorBlack"
-                                                android:textSize="17sp" />
+                                                android:textSize="17sp"
+                                                android:fontFamily="serif"/>
 
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:text="Enter Your Mobile Number "
                                                 android:textColor="@color/colorBlack"
-                                                android:textSize="12sp" />
+                                                android:textSize="12sp"
+                                                android:fontFamily="serif"/>
                                         </LinearLayout>
 
                                         <LinearLayout
@@ -109,6 +112,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:padding="5dp"
                                                 android:text="+91"
+                                                android:fontFamily="serif"
                                                 android:textColor="@color/colorBlack"
                                                 android:textSize="16sp" />
 
@@ -122,6 +126,7 @@
                                                 android:hint="Mobile Number"
                                                 android:inputType="number"
                                                 android:maxLength="10"
+                                                android:fontFamily="serif"
                                                 android:padding="5dp"
                                                 android:textSize="15sp" />
                                         </LinearLayout>
@@ -150,6 +155,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:text="I agree to the"
+                                                android:fontFamily="serif"
                                                 android:textColor="@color/colorBlack"
                                                 android:textSize="14dp" />
 
@@ -159,6 +165,7 @@
                                                 android:layout_marginLeft="3dp"
                                                 android:onClick="Terms"
                                                 android:text="@string/term"
+                                                android:fontFamily="serif"
                                                 android:textColor="@color/colorBlue"
                                                 android:textColorLink="@color/colorPrimary"
                                                 android:textSize="13dp" />
@@ -176,6 +183,7 @@
                                             android:gravity="center"
                                             android:onClick="forgot"
                                             android:padding="5dp"
+                                            android:fontFamily="serif"
                                             android:text="Forgot Password?"
                                             android:textColor="@color/colorBlack"
                                             android:textSize="15sp"
@@ -190,6 +198,7 @@
                                             android:background="@drawable/blue_background_layout"
                                             android:paddingHorizontal="10dp"
                                             android:text="Login"
+                                            android:fontFamily="serif"
                                             android:textAllCaps="false"
                                             android:textColor="@color/colorWhite"
                                             android:textSize="15sp" />
@@ -207,6 +216,7 @@
                                             android:onClick="register"
                                             android:padding="5dp"
                                             android:text=""
+                                            android:fontFamily="serif"
                                             android:textColor="@color/colorBlack"
                                             android:textSize="15sp" />
 
@@ -219,6 +229,7 @@
                                             android:layout_marginVertical="20dp"
                                             android:gravity="center"
                                             android:padding="5dp"
+                                            android:fontFamily="serif"
                                             android:text="Best quality at best price"
                                             android:textColor="@color/colorBlack2"
                                             android:textSize="16dp"

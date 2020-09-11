@@ -68,6 +68,7 @@ public class SubscriptionPaymentModeActivity extends AppCompatActivity {
         init();
 //        getIntentData();
         onClick();
+        minimuncart();
     }
 
     private void onClick() {
@@ -188,7 +189,6 @@ public class SubscriptionPaymentModeActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        minimuncart();
     }
 
     public void dismissDialog() {
@@ -470,12 +470,8 @@ public class SubscriptionPaymentModeActivity extends AppCompatActivity {
 
 
     public void startPayment() {
-
         final Activity activity = this;
-
         final Checkout co = new Checkout();
-
-
         try {
             JSONObject options = new JSONObject();
             options.put("name", SharedPref.getVal(SubscriptionPaymentModeActivity.this, SharedPref.customer_name));
@@ -483,7 +479,6 @@ public class SubscriptionPaymentModeActivity extends AppCompatActivity {
             options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.png");
             options.put("currency", "INR");
             options.put("amount", payamt);
-
 
             JSONObject preFill = new JSONObject();
             preFill.put("email", SharedPref.getVal(SubscriptionPaymentModeActivity.this, SharedPref.email_id));
@@ -499,7 +494,6 @@ public class SubscriptionPaymentModeActivity extends AppCompatActivity {
                     .show();
             e.printStackTrace();
         }
-
     }
 
 
@@ -518,12 +512,9 @@ public class SubscriptionPaymentModeActivity extends AppCompatActivity {
 
 
     @SuppressWarnings("unused")
-
     public void onPaymentError(int code, String response) {
         try {
-
             Toast.makeText(this, "Payment failed: " + code + " " + response, Toast.LENGTH_LONG).show();
-
         } catch (Exception e) {
 
         }

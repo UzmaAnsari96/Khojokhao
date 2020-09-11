@@ -30,6 +30,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             android:text="My Address"
+            android:fontFamily="serif"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -75,6 +76,7 @@
                         android:layout_height="wrap_content"
                         android:text="Add New Address"
                         android:padding="5dp"
+                        android:fontFamily="serif"
                         android:textSize="16sp"
                         android:layout_marginHorizontal="5dp"
                         android:textStyle="bold"
@@ -107,6 +109,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:ellipsize="end"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorBlack"
                     android:text="Select Pick Points"
                     android:textSize="14dp" />
@@ -121,6 +124,7 @@
                 android:text="OR"
                 android:visibility="gone"
                 android:gravity="center"
+                android:fontFamily="serif"
                 android:textColor="@color/colorGreen"
                 android:textSize="13dp" />
 
@@ -136,7 +140,8 @@
                     android:layout_marginHorizontal="10dp"
                     android:text="Select your delivery Address"
                     android:textColor="@color/colorBlack"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:fontFamily="serif"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rec_list"
@@ -156,5 +161,6 @@
         android:text="No address Added"
         android:layout_centerInParent="true"
         android:textStyle="bold"
+        android:fontFamily="serif"
         android:textSize="15sp"/>
 </RelativeLayout>

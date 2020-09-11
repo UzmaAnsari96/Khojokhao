@@ -33,6 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="12sp"
+                    android:fontFamily="serif"
                     android:paddingVertical="3dp"
                     android:text="Select your address"
                     android:textColor="@color/colorBlack" />
@@ -42,6 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="serif"
                     android:text="Vashi Navi Mumbai \nMaharashtra"
                     android:textColor="@color/colorBlack"
                     android:textSize="16sp" />
@@ -59,6 +61,7 @@
                     android:id="@+id/textViewOptions"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:fontFamily="serif"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentRight="true"
                     android:layout_gravity="right"

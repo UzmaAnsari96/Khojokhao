@@ -39,6 +39,7 @@
                 android:textStyle="bold"
                 android:padding="5dp"
                 android:textSize="15sp"
+                android:fontFamily="serif"
                 android:layout_marginHorizontal="5dp"
                 android:textColor="@color/colorBlack1"
                 android:text="Fresh Fruits" />

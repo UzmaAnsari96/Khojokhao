@@ -97,10 +97,6 @@ public class RegisterActivity extends AppCompatActivity {
         btn_process.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
-
                 try {
 
                     eid=edt_email.getText().toString();
@@ -343,7 +339,7 @@ public class RegisterActivity extends AppCompatActivity {
                     params.put("customer_fname", edt_fname.getText().toString().trim());
                     params.put("customer_lname", "");
                     params.put("city_id", scityname);
-                    params.put("customer_email", eid);
+                    params.put("customer_email", "");
                     params.put("customer_phone", edt_mobile.getText().toString().trim());
                     params.put("customer_pincode", edt_pincode.getText().toString().trim());
                     params.put("referral_code", referralCode);

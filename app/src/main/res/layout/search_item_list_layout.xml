@@ -23,6 +23,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:padding="5dp"
+                android:fontFamily="serif"
                 android:layout_margin="5dp"/>
 
         </LinearLayout>

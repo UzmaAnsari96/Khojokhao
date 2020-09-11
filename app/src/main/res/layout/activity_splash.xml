@@ -36,6 +36,7 @@
                 android:textAlignment="center"
                 android:textSize="16dp"
                 android:padding="5dp"
+                android:fontFamily="serif"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack"/>
 

@@ -30,6 +30,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             android:text="Search"
+            android:fontFamily="serif"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -40,7 +41,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,6 +84,7 @@
                         android:layout_marginHorizontal="5dp"
                         android:padding="5dp"
                         android:background="@null"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorBlack1"
                         android:layout_gravity="center"/>
 

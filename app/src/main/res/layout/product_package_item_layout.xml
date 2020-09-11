@@ -55,6 +55,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
+                        android:fontFamily="serif"
                         android:text="Strawberries 500 gm"
                         android:textColor="@color/colorGreen"
                         android:textSize="16sp" />
@@ -77,6 +78,7 @@
                         android:padding="5dp"
                         android:layout_gravity="right"
                         android:text="Rs.200"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorGreen"
                         android:textSize="18sp"
                         android:textStyle="bold" />

@@ -30,6 +30,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             android:text="My Address"
+            android:fontFamily="serif"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -76,6 +77,7 @@
                         android:text="Add New Address"
                         android:padding="5dp"
                         android:textSize="16sp"
+                        android:fontFamily="serif"
                         android:layout_marginHorizontal="5dp"
                         android:textStyle="bold"
                         android:textColor="@color/colorGreen"/>
@@ -93,6 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:text="Select your delivery Address"
+                    android:fontFamily="serif"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"/>
 
@@ -111,6 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No address Added"
+        android:fontFamily="serif"
         android:layout_centerInParent="true"
         android:textStyle="bold"
         android:textSize="15sp"/>

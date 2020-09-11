@@ -32,6 +32,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             android:text=""
+            android:fontFamily="serif"
             android:textColor="@color/colorBlack1"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -66,6 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="no data found"
+        android:fontFamily="serif"
         android:layout_centerInParent="true"
         android:textSize="15sp"
         android:visibility="gone"
@@ -116,6 +118,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Search"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -149,6 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Search"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -184,6 +188,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Home"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -217,6 +222,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Home"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -252,6 +258,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Cart"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -285,6 +292,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Cart"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -304,6 +312,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="99+"
+                        android:fontFamily="serif"
                         android:textSize="10sp"
                         android:padding="4dp"
                         android:gravity="center"
@@ -343,6 +352,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Subscription"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -376,6 +386,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Subscription"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
@@ -411,6 +422,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Account"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="11dp" />
 
@@ -444,6 +456,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Account"
+                        android:fontFamily="serif"
                         android:textColor="@color/colorWhite"
                         android:textSize="12sp" />
 
